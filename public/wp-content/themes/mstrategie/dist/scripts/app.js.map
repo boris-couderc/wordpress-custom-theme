@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/scripts/test.js", "../../src/scripts/modules/Navbar.js", "../../src/scripts/app.js"],
+  "sourcesContent": ["\nexport default function() {\n\n    console.log('import test');\n\n};\n", "export default class Navbar {\r\n    constructor() {\r\n\r\n        this.init()\r\n\r\n    }\r\n\r\n    init() {\r\n\r\n        console.log(\"init Navbar\");\r\n\r\n    }\r\n}\r\n", "\nimport test from \"./test\";\n\nimport Navbar from \"./modules/Navbar\";\n\nconst html = document.documentElement;\nconst body = document.body;\n\nwindow.onload = (event) => {\n  init();\n};\n\nfunction init() {\n  html.classList.add(\"is-loaded\", \"is-ready\");\n  html.classList.remove(\"is-loading\");\n  html.classList.remove(\"has-no-js\");\n\n  console.log('app is init !');\n\n  test();\n\n  const navbar = new Navbar();\n\n}\n"],
+  "mappings": "MACe,YAAW,CAEtB,QAAQ,IAAI,eCHhB,WAA4B,CACxB,aAAc,CAEV,KAAK,OAIT,MAAO,CAEH,QAAQ,IAAI,iBATb,EAAP,ECKA,GAAM,GAAO,SAAS,gBAChB,EAAO,SAAS,KAEtB,OAAO,OAAS,AAAC,GAAU,CACzB,KAGF,YAAgB,CACd,EAAK,UAAU,IAAI,YAAa,YAChC,EAAK,UAAU,OAAO,cACtB,EAAK,UAAU,OAAO,aAEtB,QAAQ,IAAI,iBAEZ,IAEA,GAAM,GAAS,GAAI",
+  "names": []
+}
