@@ -1,0 +1,36 @@
+# OS et IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.code-workspace
+*.log
+node_modules/
+composer.lock
+
+# WordPress files
+public/wp-admin/
+public/wp-content/*
+!public/wp-content/themes/
+public/wp-content/themes/*
+public/wp-includes/
+
+public/.htaccess
+public/*.log
+public/*.php
+public/license.txt
+public/readme.html
+
+# local by Flywheel files
+sql/
+
+# Front-end
+node_modules
+
+# Don’t ignore current theme
+!public/wp-content/themes/mstrategie
+!public/wp-config.php
+
+
+
+

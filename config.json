@@ -1,0 +1,26 @@
+{
+    "url": "http://mstrategie.local/",
+    "src": "./assets/",
+    "dest": "./www/",
+    "build": "./build/",
+    "styles": {
+        "src": "./public/wp-content/themes/mstrategie/src/styles/",
+        "dest": "./public/wp-content/themes/mstrategie/dist/styles/",
+        "main": "main",
+        "critical": "critical"
+    },
+    "scripts": {
+        "src": "./public/wp-content/themes/mstrategie/src/scripts/",
+        "dest": "./public/wp-content/themes/mstrategie/dist/scripts/",
+        "main": "app",
+        "vendors": {
+            "src": "./public/wp-content/themes/mstrategie/src/scripts/vendors/",
+            "main": "vendors"
+        }
+    }
+    ,"views": {
+        "src": "./public/wp-content/themes/mstrategie/templates/"
+    }
+}
+
+
