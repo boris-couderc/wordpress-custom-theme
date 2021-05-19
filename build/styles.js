@@ -14,13 +14,10 @@ export function compileStyles() {
         outputStyle: 'compressed',
         sourceMap: true
     }, (error, result) => {
-
         console.log(paths.styles.src + paths.styles.main + '.scss');
-
         if (error) {
             message('Error compiling main.scss', 'error');
             console.log(error.formatted);
-
             /*
             notification({
                 title: 'main.scss compilation failed 🚨',
@@ -34,6 +31,34 @@ export function compileStyles() {
         if (!error){
             // No errors during the compilation, write this result on the disk
             fs.writeFile(paths.styles.dest + paths.styles.main + '.css', result.css, (err) => {});
+        }
+    });
+
+
+    // Compile editor scss
+    sass.render({
+        file: paths.styles.src + paths.styles.editor + '.scss',
+        outFile: paths.styles.dest + paths.styles.editor + '.css',
+        outputStyle: 'compressed',
+        sourceMap: true
+    }, (error, result) => {
+        console.log(paths.styles.src + paths.styles.editor + '.scss');
+        if (error) {
+            message('Error compiling editor.scss', 'error');
+            console.log(error.formatted);
+            /*
+            notification({
+                title: 'editor.scss compilation failed 🚨',
+                message: `${error.formatted}`
+            });
+            */
+        } else {
+            message('Styles built', 'success', 'Styles built in');
+        }
+
+        if (!error){
+            // No errors during the compilation, write this result on the disk
+            fs.writeFile(paths.styles.dest + paths.styles.editor + '.css', result.css, (err) => {});
         }
     });
 

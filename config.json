@@ -6,7 +6,8 @@
     "styles": {
         "src": "./public/wp-content/themes/mstrategie/src/styles/",
         "dest": "./public/wp-content/themes/mstrategie/dist/styles/",
-        "main": "main",
+        "main": "style",
+        "editor": "style-editor",
         "critical": "critical"
     },
     "scripts": {

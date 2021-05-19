@@ -1,7 +1,7 @@
 <a class="skip-link screen-reader-text" href="#content" hidden aria-hidden="false">{{ _e( 'Skip to content') }}</a>
 <header class="header" >
     {% block header %}
-        <div class="o-container">
+        <div class="o-container -pl-same">
             <div class="logo" role="banner">
                 <a class="logo_link" href="{{site.url}}" rel="home">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 54" class="logo_img">
@@ -17,12 +17,10 @@
                 </a>
             </div>
 
-
             <nav id="nav-main" class="nav-main" role="navigation" hidden>
                 {% include "components/menu.twig" with {'items': menu.get_items} %}
             </nav><!-- #nav -->
 
-            
         </div>
     {% endblock %}
 </header>

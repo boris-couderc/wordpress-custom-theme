@@ -107,6 +107,8 @@ class StarterSite extends Timber\Site {
 		
 		parent::__construct();
 	}
+
+
 	/** This is where you can register custom post types. */
 	public function register_post_types() {}
 
@@ -137,7 +139,7 @@ class StarterSite extends Timber\Site {
 		$theme_informations = wp_get_theme();
    		$theme_version      = $theme_informations->get('Version');
 		wp_enqueue_script('app', get_template_directory_uri() . '/dist/scripts/app.js', [], null, true );
-		wp_enqueue_style('app', get_template_directory_uri() . '/dist/styles/main.css', [], $theme_version);
+		wp_enqueue_style('app', get_template_directory_uri() . '/dist/styles/style.css', [], $theme_version);
 	}
 
 	/** Add Webp & svg support */
@@ -220,6 +222,23 @@ class StarterSite extends Timber\Site {
 		);
 
 		add_theme_support( 'menus' );
+
+		/*
+		 * Add custom editor
+		 */
+
+		add_theme_support( 'editor-styles' );
+		add_editor_style('./dist/styles/style-editor.css');
+
+		add_theme_support( 'editor-color-palette',
+			array(
+				array( 'name' => 'yellow', 'slug'  => 'yellow', 'color' => '#F8E834' ),
+				array( 'name' => 'grey', 'slug'  => 'grey', 'color' => '#515151' ),
+				array( 'name' => 'darkgrey', 'slug'  => 'darkgrey', 'color' => '#404040' ),
+			)
+		);
+		
+		add_theme_support( 'align-wide' );
 	}
 
 	/** This Would return 'foo bar!'.

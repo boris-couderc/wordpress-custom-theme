@@ -2,21 +2,26 @@
 @use '../tools'as t;
 
 .o-container {
+    // border: 1px solid rgba($color: #000000, $alpha: .05);
+
     margin-right: auto;
     margin-left: auto;
     padding-right: t.rem(s.$unit-small);
     padding-left: t.rem(s.$unit-small);
     max-width: t.rem(s.$container-width + (s.$padding * 2));
 
-    border: 1px solid rgba($color: #000000, $alpha: .05);
-
     @media (min-width: s.$from-small) {
         padding-right: t.rem(s.$padding);
         padding-left: t.rem(s.$padding);
     }
 
+    @media (min-width: s.$from-medium) {
+        padding-left: calc(#{t.rem(s.$padding)} + 67px);
+        &.-pl-same {
+            padding-left: t.rem(s.$padding);
+        }
+    }
 }
-
 
 /*
 .container {

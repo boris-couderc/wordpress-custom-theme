@@ -23,13 +23,16 @@ $font-family: $font-sans-serif;
 $color:       #222222;
 // Headings
 $font-family-heading: 'basiercircle', $font-sans-serif;
-$font-size-h1:  36px  !default;
-$font-size-h2:  28px  !default;
+$font-size-h1:  48px  !default;
+$font-size-h2:  32px  !default;
 $font-size-h3:  24px  !default;
 $font-size-h4:  20px  !default;
 $font-size-h5:  18px  !default;
 $font-size-h6:  16px  !default;
 $line-height-h: $line-height;
+$line-height-h1: 1.3;
+$margin-bottom-h1: 3rem;
+
 // Weights
 $light:  300;
 $normal: 400;
@@ -50,6 +53,8 @@ $unit-small: 32px;
 // Container
 // ==========================================================================
 $container-width: 1040px;
+$padding-small:   $unit-small;
+$padding-medium:  48px;
 $padding:         $unit;
 
 // Breakpoints

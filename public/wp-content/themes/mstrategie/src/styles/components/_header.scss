@@ -2,17 +2,33 @@
 @use '../tools'as t;
 
 .header {
-    padding-top: t.rem(16px);
+    // border: 1px solid rgba($color: #000000, $alpha: .2);
 
     font-family: s.$font-family-heading;
+    padding-top: t.rem(24px);
+    padding-bottom: t.rem(24px);
+
+    @media (min-width: s.$from-small) {
+        padding-top: t.rem(32px);
+        padding-bottom: t.rem(32px);
+    }
+
+    @media (min-width: s.$from-medium) {
+        padding-top: t.rem(48px);
+        padding-bottom: t.rem(48px);
+    }
 }
 
 .logo {
-    width: 260px;
+    width: 200px;
     max-width: 100%;
     height: auto;
 
     &_img {
         display: block;
+    }
+
+    @media (min-width: s.$from-medium) {
+        width: 260px;
     }
 }
