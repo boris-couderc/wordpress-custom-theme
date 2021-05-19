@@ -1,0 +1,18 @@
+@use '../settings'as s;
+@use '../tools'as t;
+
+.header {
+    padding-top: t.rem(16px);
+
+    font-family: s.$font-family-heading;
+}
+
+.logo {
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+
+    &_img {
+        display: block;
+    }
+}

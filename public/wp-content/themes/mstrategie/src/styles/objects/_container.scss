@@ -1,21 +1,29 @@
-// ==========================================================================
-// Objects / Container
-// ==========================================================================
-
-//
-// Page-level constraining and wrapping elements.
-//
-// > In programming languages the word *container* is generally used for structures
-// that can contain more than one element.
-// > A *wrapper* instead is something that wraps around a single object to provide
-// more functionalities and interfaces to it.
-// @link http://stackoverflow.com/a/13202141/140357
-//
+@use '../settings'as s;
+@use '../tools'as t;
 
 .o-container {
     margin-right: auto;
     margin-left: auto;
-    padding-right: rem($padding);
-    padding-left: rem($padding);
-    max-width: rem($container-width + ($padding * 2));
+    padding-right: t.rem(s.$unit-small);
+    padding-left: t.rem(s.$unit-small);
+    max-width: t.rem(s.$container-width + (s.$padding * 2));
+
+    border: 1px solid rgba($color: #000000, $alpha: .05);
+
+    @media (min-width: s.$from-small) {
+        padding-right: t.rem(s.$padding);
+        padding-left: t.rem(s.$padding);
+    }
+
 }
+
+
+/*
+.container {
+    border: 2px solid red;
+}
+
+.content-wrapper {
+    border: 2px solid green;
+}
+*/

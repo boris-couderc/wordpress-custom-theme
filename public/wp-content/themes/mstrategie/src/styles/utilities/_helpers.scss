@@ -1,17 +1,16 @@
-// ==========================================================================
-// Utilities / Helpers
-// ==========================================================================
+@use '../settings'as s;
+@use '../tools'as t;
 
 // Layout
 // ==========================================================================
 .u-clearfix {
-    @include u-clearfix;
+    @include t.u-clearfix;
 }
 
 // Decorative
 // =============================================================================
 .u-truncate {
-    @include u-truncate;
+    @include t.u-truncate;
 }
 
 //  Visibility / Display
@@ -60,12 +59,12 @@
  * Completely remove from the flow but leave available to screen readers.
  */
 .u-screen-reader-text {
-    @include u-accessibly-hidden;
+    @include t.u-accessibly-hidden;
 }
 
 @media not print {
     .u-screen-reader-text\@screen {
-        @include u-accessibly-hidden;
+        @include t.u-accessibly-hidden;
     }
 }
 
@@ -77,5 +76,5 @@
  * @todo Define styles when focused.
  */
 .u-screen-reader-text.-focusable {
-    @include u-accessibly-focusable;
+    @include t.u-accessibly-focusable;
 }

@@ -2,35 +2,47 @@
 // Base / Fonts
 // ==========================================================================
 
-// @include font-face(
-//     $font-foobar,
-//     "fonts/Foobar/Regular"
-// ) {
-//     font-style:  normal;
-//     font-weight: 400;
-// }
+/*
+@font-face {
+     font-family: "basiercircle";
+     src: url("../fonts/basiercircle/basiercircle-regular-webfont.woff2") format("woff2"),
+          url("../fonts/basiercircle/basiercircle-regular-webfont.woff") format("woff");
+     font-style: normal;
+     font-weight: 400;
+}
 
-// @include font-face(
-//     $font-foobar,
-//     "fonts/Foobar/Medium"
-// ) {
-//     font-style:  normal;
-//     font-weight: 500;
-// }
+@font-face {
+     font-family: "basiercircle";
+     src: url("../fonts/basiercircle/basiercircle-medium-webfont.woff2") format("woff2"),
+          url("../fonts/basiercircle/basiercircle-medium-webfont.woff") format("woff");
+     font-style: normal;
+     font-weight: 500;
+}
+*/
 
-// @include font-face(
-//     $font-foobar,
-//     "fonts/Foobar/Semibold"
-// ) {
-//     font-style:  normal;
-//     font-weight: 600;
-// }
+@font-face {
+     font-family: "basiercircle";
+     src: url("../fonts/basiercircle/basiercircle-semibold-webfont.woff2") format("woff2"),
+          url("../fonts/basiercircle/basiercircle-semibold-webfont.woff") format("woff");
+     font-style: normal;
+     font-weight: 600;
+}
 
-// @include font-face(
-//     $font-bazqux,
-//     "fonts/Bazqux/Regular",
-//     ("eot", "woff2", "woff", "ttf")
-// ) {
-//     font-style:  normal;
-//     font-weight: 400;
-// }
+/*
+@font-face {
+    font-family: "basiercircle";
+    src: url("../fonts/basiercircle/basiercircle-bold-webfont.woff2") format("woff2"),
+         url("../fonts/basiercircle/basiercircle-bold-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+*/
+
+@font-face {
+     font-family: "inter";
+     // src: url("../fonts/inter/inter-semibold.woff2") format("woff2"),
+     //      url("../fonts/inter/inter-semibold.woff") format("woff");
+     src: url("../fonts/inter/inter-regular.woff") format("woff");
+     font-style: normal;
+     font-weight: 600;
+}

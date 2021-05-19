@@ -1,65 +1,55 @@
-// ==========================================================================
-// Main
-// ==========================================================================
+/*
+@use '../settings'as s;
+@use '../tools'as t;
+*/
 
-// Settings
-// ==========================================================================
-@import "settings/config.colors";
-@import "settings/config";
-
-// ==========================================================================
-// Tools
-// ==========================================================================
-@import "tools/functions";
-@import "tools/mixins";
-@import "tools/fonts";
-@import "tools/layout";
-@import "tools/widths";
-// @import "tools/family";
 
 // Generic
 // ==========================================================================
-@import "node_modules/normalize.css/normalize";
-@import "generic/generic";
-@import "generic/media";
-@import "generic/form";
-@import "generic/button"; 
+@forward "generic/normalize";
+@forward "generic/generic";
+// @forward "generic/media";
+// @forward "generic/form";
+// @forward "generic/button"; 
 
 // Elements
 // ==========================================================================
-@import "elements/fonts";
-@import "elements/page";
+@forward "elements/fonts";
+@forward "elements/page";
 
 // Objects
 // ==========================================================================
-@import "objects/scroll";
-@import "objects/container";
-@import "objects/ratio";
-@import "objects/layout";
-// @import "objects/crop";
-// @import "objects/table";
+// @forward "objects/scroll";
+@forward "objects/container";
+@forward "objects/page";
+// @forward "objects/ratio";
+// @forward "objects/layout";
+// @forward "objects/crop";
+// @forward "objects/table";
 
 // Vendors
 // ==========================================================================
-// @import "vendors/vendor";
+// @forward "vendors/vendor";
 
 // Components
 // ==========================================================================
-@import "components/scrollbar";
-@import "components/heading";
-@import "components/button";
-@import "components/form";
+// @forward "components/scrollbar";
+@forward "components/heading";
+// @forward "components/button";
+// @forward "components/form";
+@forward "components/header";
+@forward "components/footer";
 
 // Templates
 // ==========================================================================
-// @import "templates/template";
+// @forward "templates/template";
 
 // Utilities
 // ==========================================================================
-@import "utilities/ratio";
-@import "utilities/widths";
-// @import "utilities/align";
-// @import "utilities/helpers";
-// @import "utilities/states";
-// @import "utilities/spacing";
-// @import "utilities/print";
+// @forward "utilities/ratio";
+// @forward "utilities/widths";
+// @forward "utilities/align";
+@forward "utilities/helpers";
+// @forward "utilities/states";
+// @forward "utilities/spacing";
+// @forward "utilities/print";

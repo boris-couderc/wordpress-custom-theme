@@ -1,4 +1,4 @@
-import sass from 'node-sass';
+import sass from 'sass';
 import paths from '../config.json';
 import fs from 'fs';
 import message from './utils/message.js';

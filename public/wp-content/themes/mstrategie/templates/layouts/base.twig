@@ -8,29 +8,38 @@
 
 	<body class="{{body_class}}">
 		
-		{# Header #}
-		{% block header %}
-			{% include 'components/header.twig' %}
-		{% endblock %}
+		<div class="o-page">
+			
+			{# Header #}
+			{% block header %}
+				{% include 'components/header.twig' %}
+			{% endblock %}
 
-		<section id="content" role="main" class="content-wrapper">
-			{% if title %}<h1>{{title}}</h1>{% endif %}
-			<div class="wrapper {{sidebar_class}}">
-				{% block content %}
-					Sorry, no content
-				{% endblock %}
-			</div>
-			{% if sidebar %}
-				<aside class="layout-sidebar">
-					{{sidebar}}
-				</aside>
-			{% endif %}
-		</section>
+			<main id="content" role="main" class="main">
 
-		{# Footer #}
-		{% block footer %}
-			{% include 'components/footer.twig' %}
-			{{ function('wp_footer') }}
-		{% endblock %}
+				{% if title %}<h1>{{title}}</h1>{% endif %}
+
+				<!-- <div class="wrapper {{sidebar_class}}"> -->
+					{% block content %}
+						Sorry, no content
+					{% endblock %}
+				<!-- </div> -->
+
+				<!-- {% if sidebar %}
+					<aside class="layout-sidebar">
+						{{sidebar}}
+					</aside>
+				{% endif %} -->
+
+			</main>
+
+			{# Footer #}
+			{% block footer %}
+				{% include 'components/footer.twig' %}
+				{{ function('wp_footer') }}
+			{% endblock %}
+
+		</div>
+
 	</body>
 </html>

@@ -1,5 +1,4 @@
-// Tools / Functions
-// ==========================================================================
+@use '../settings'as s;
 
 //
 // Converts the given pixel value to its EM quivalent.
@@ -8,7 +7,7 @@
 // @param  {Number} $base [$font-size] - The assumed base font size.
 // @return {Number} Scalable pixel value in EMs.
 //
-@function em($size, $base: $font-size) {
+@function em($size, $base: s.$font-size) {
     @if (type-of($size) == number) {
         @if (unit($size) != "px") {
             @error "`#{$size}` needs to be a pixel value.";
@@ -35,7 +34,7 @@
 // @param  {Number} $base [$font-size] - The assumed base font size.
 // @return {Number} Scalable pixel value in REMs.
 //
-@function rem($size, $base: $font-size) {
+@function rem($size, $base: s.$font-size) {
     @if (type-of($size) == number) {
         @if (unit($size) != "px") {
             @error "`#{$size}` needs to be a pixel value.";
@@ -98,7 +97,7 @@
 @function important($flag: false) {
     @if ($flag == true) {
         @return !important;
-    } @elseif ($important == false) {
+    } @else if ($important == false) {
         @return null;
     } @else {
         @error "`#{$flag}` needs to be `true` or `false`."

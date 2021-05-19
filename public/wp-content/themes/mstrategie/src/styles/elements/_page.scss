@@ -1,48 +1,47 @@
+@use '../settings'as s;
+@use '../tools'as t;
+
 // ==========================================================================
 // Base / Page
 // ==========================================================================
 
-//
-// Simple page-level setup.
-//
-// 1. Set the default `font-size` and `line-height` for the entire project,
-//    sourced from our default variables.
-// 2. Ensure the page always fills at least the entire height of the viewport.
-//
 html {
-    min-height: 100%; /* [2] */
-    color: $color;
-    font-family: $font-family;
-    line-height: $line-height; /* [1] */
-    -webkit-font-smoothing: antialiased;
+    overflow-y             : scroll;
+    scroll-behavior        : smooth;
+    color                  : s.$color-txt;
+    font-family            : s.$font-family;
+    line-height            : s.$line-height;
+    -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color       : s.$color-background;
 
-    @media (max-width: $to-small) {
-        font-size: $font-size - 2px;
+    @media (max-width: s.$to-small) {
+        font-size: s.$font-size - 2; 
     }
 
-    @media (min-width: $from-small) and (max-width: $to-medium) {
-        font-size: $font-size - 2px;
+    @media (min-width: s.$from-small) and (max-width: s.$to-medium) {
+        font-size: s.$font-size - 2;
     }
 
-    @media (min-width: $from-medium) and (max-width: $to-large) {
-        font-size: $font-size - 1px;
+    @media (min-width: s.$from-medium) and (max-width: s.$to-large) { 
+        font-size: s.$font-size - 1;
     }
 
-    @media (min-width: $from-large) and (max-width: $to-huge) {
-        font-size: $font-size; /* [1] */
+    @media (min-width: s.$from-large) and (max-width: s.$to-huge) {
+        font-size: s.$font-size;
+        /* Default font-size */
     }
 
-    @media (min-width: $from-huge) and (max-width: $to-gigantic) {
-        font-size: $font-size + 1px;
+    @media (min-width: s.$from-huge) and (max-width: s.$to-gigantic) {
+        font-size: s.$font-size + 1;
     }
 
-    @media (min-width: $from-gigantic) and (max-width: $to-colossal) {
-        font-size: $font-size + 2px;
+    @media (min-width: s.$from-gigantic) and (max-width: s.$to-colossal) {
+        font-size: s.$font-size + 2;
     }
 
-    @media (min-width: $from-colossal) {
-        font-size: $font-size + 4px;
+    @media (min-width: s.$from-colossal) {
+        font-size: s.$font-size + 2;
     }
 
     &.is-loading {
@@ -65,15 +64,15 @@ body {
 }
 
 ::selection {
-    background-color: $selection-background-color;
-    color: $selection-text-color;
-    text-shadow: none;
+    background-color: s.$selection-background-color;
+    color           : s.$selection-text-color;
+    text-shadow     : none;
 }
 
 a {
-    color: $link-color;
+    color: s.$link-color;
 
-    @include u-hocus {
-        color: $link-hover-color;
+    @include t.u-hocus {
+        color: s.$link-hover-color;
     }
 }

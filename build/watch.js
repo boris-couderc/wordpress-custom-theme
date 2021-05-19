@@ -57,5 +57,5 @@ bs.watch(
     // setTimeout to fix bug in windows
     setTimeout(()=>{
         compileStyles();
-    }, 100)
+    }, 50)
 });

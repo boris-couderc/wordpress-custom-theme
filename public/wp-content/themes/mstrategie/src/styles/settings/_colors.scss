@@ -7,15 +7,37 @@
 $white: #FFFFFF;
 $black: #000000;
 
+
+$color-darker    : #2E2D2C;
+
+
+
+
+
 // Specific
 // =============================================================================
+
+// Texte
+$color-txt            : #515151;
+$color-txt-dark    : #404040;
+$color-txt-darker    : #2E2D2C;
+// $color-txt-light   : #8d8d8d;
+// $color-txt-lighter : #b3b3b3;
+// $color-txt-lightest: #cccccc;
+
+// Titles
+$color-title: $color-txt-darker;
+
 // Link
 $link-color:       #1A0DAB;
 $link-focus-color: #1A0DAB;
 $link-hover-color: darken(#1A0DAB, 10%);
+
 // Selection
 $selection-text-color:       #3297FD;
 $selection-background-color: #FFFFFF;
+
+$color-background       : #ffffff;
 
 // Social Colors
 // =============================================================================
