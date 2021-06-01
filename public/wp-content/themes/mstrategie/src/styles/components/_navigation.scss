@@ -1,0 +1,82 @@
+@use '../settings'as s;
+
+.navigation {
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-mobile-toggle {
+    position: relative;
+    border: none;
+    background: none;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.menu {
+    border: 1px solid lightgrey;
+    
+    //display: none;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.125rem;
+}
+
+.menu-item {
+
+    font-family: s.$font-family-heading;
+
+}
+
+
+@media (max-width: s.$from-medium) {
+
+    .menu {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: s.$color-primary;
+
+        justify-content: center;
+        align-items: center;
+
+        display: none;
+
+        &.--open {
+            display: flex;
+        }
+        
+    }
+    
+    .menu-item {
+    }
+
+}
+
+
+@media (min-width: s.$from-medium) {
+
+    .menu-mobile-toggle {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-item {
+
+        &:not(:first-child) {
+            margin-left: 2rem;
+        }
+
+    }
+
+}

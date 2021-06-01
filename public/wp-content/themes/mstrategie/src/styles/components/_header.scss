@@ -8,6 +8,13 @@
     padding-top: t.rem(24px);
     padding-bottom: t.rem(24px);
 
+    &_content {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+
     @media (min-width: s.$from-small) {
         padding-top: t.rem(32px);
         padding-bottom: t.rem(32px);
@@ -29,6 +36,14 @@
     }
 
     @media (min-width: s.$from-medium) {
+        width: 220px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 230px;
+    }
+
+    @media (min-width: s.$from-large) {
         width: 260px;
     }
 }

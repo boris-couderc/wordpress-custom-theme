@@ -1,0 +1,20 @@
+@use '../settings'as s;
+@use '../tools'as t;
+
+.c-main {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+
+    a {
+        color: s.$link-color;
+    
+        text-decoration: underline;
+        text-decoration-color: s.$color-primary;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
+
+        @include t.u-hocus {
+            color: s.$link-hover-color;
+        }
+    }
+}

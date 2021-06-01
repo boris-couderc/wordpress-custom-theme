@@ -40,9 +40,8 @@
 
 @font-face {
      font-family: "inter";
-     // src: url("../fonts/inter/inter-semibold.woff2") format("woff2"),
-     //      url("../fonts/inter/inter-semibold.woff") format("woff");
-     src: url("../fonts/inter/inter-regular.woff") format("woff");
+     src: url("../fonts/inter/inter-regular.woff2") format("woff2"),
+          url("../fonts/inter/inter-regular.woff") format("woff");
      font-style: normal;
      font-weight: 600;
 }

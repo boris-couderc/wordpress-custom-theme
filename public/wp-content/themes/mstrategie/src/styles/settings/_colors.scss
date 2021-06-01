@@ -10,7 +10,7 @@ $black: #000000;
 
 $color-darker    : #2E2D2C;
 
-
+$color-primary: #F8E834;
 
 
 
@@ -29,13 +29,13 @@ $color-txt-darker    : #2E2D2C;
 $color-title: $color-txt-darker;
 
 // Link
-$link-color:       #1A0DAB;
-$link-focus-color: #1A0DAB;
-$link-hover-color: darken(#1A0DAB, 10%);
+$link-color:       $color-txt-dark;
+$link-focus-color: $color-txt-dark;
+$link-hover-color: darken($color-txt-dark, 10%);
 
 // Selection
-$selection-text-color:       #3297FD;
-$selection-background-color: #FFFFFF;
+$selection-text-color:       $color-txt-darker;
+$selection-background-color: $color-primary;
 
 $color-background       : #ffffff;
 

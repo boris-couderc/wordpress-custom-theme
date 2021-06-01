@@ -4,6 +4,11 @@
 .o-container {
     // border: 1px solid rgba($color: #000000, $alpha: .05);
 
+//     $padding-small:   $unit-small;
+//     $padding-medium:  48px;
+//     $padding:         $unit;
+
+
     margin-right: auto;
     margin-left: auto;
     padding-right: t.rem(s.$unit-small);
@@ -11,12 +16,26 @@
     max-width: t.rem(s.$container-width + (s.$padding * 2));
 
     @media (min-width: s.$from-small) {
-        padding-right: t.rem(s.$padding);
-        padding-left: t.rem(s.$padding);
+        padding-left: calc(#{t.rem(s.$unit-small)} + 52px);
+        &.-pl-same {
+            padding-left: t.rem(s.$unit-small);
+        }
     }
 
     @media (min-width: s.$from-medium) {
-        padding-left: calc(#{t.rem(s.$padding)} + 67px);
+        padding-left: calc(#{t.rem(s.$padding-medium)} + 58px);
+        &.-pl-same {
+            padding-left: t.rem(s.$padding-medium);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        padding-right: t.rem(s.$padding-medium);
+    }
+
+    @media (min-width: s.$from-large) {
+        padding-right: t.rem(s.$padding);
+        padding-left: calc(#{t.rem(s.$padding)} + 68px);
         &.-pl-same {
             padding-left: t.rem(s.$padding);
         }

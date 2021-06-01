@@ -16,11 +16,11 @@ html {
     background-color       : s.$color-background;
 
     @media (max-width: s.$to-small) {
-        font-size: s.$font-size - 2; 
+        font-size: s.$font-size - 1; 
     }
 
     @media (min-width: s.$from-small) and (max-width: s.$to-medium) {
-        font-size: s.$font-size - 2;
+        font-size: s.$font-size - 1;
     }
 
     @media (min-width: s.$from-medium) and (max-width: s.$to-large) { 
@@ -79,4 +79,8 @@ a {
 
 p {
     margin-bottom: 1rem;
+}
+
+.test-color {
+    background: grey;
 }
