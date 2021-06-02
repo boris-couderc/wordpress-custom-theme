@@ -1,7 +1,19 @@
 @use '../settings'as s;
 
 .footer {
+    display: flex;
+    justify-content: flex-end;
     padding-top: 2rem;
     padding-bottom: 2rem;
     background: s.$color-darker;
+    color: s.$color-txt-light;
+
+
+
+    &_copyright {
+        font-size: .9rem;
+        text-align: right;
+    }
+
+
 }

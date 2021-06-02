@@ -2,8 +2,12 @@
 @use '../tools'as t;
 
 .c-main {
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 6rem;
+
+    .home & {
+        margin-top: 3rem;
+    }
 
     a {
         color: s.$link-color;
@@ -12,7 +16,8 @@
         text-decoration-color: s.$color-primary;
         text-decoration-thickness: 2px;
         text-underline-offset: 2px;
-
+        font-weight: 500;
+        
         @include t.u-hocus {
             color: s.$link-hover-color;
         }

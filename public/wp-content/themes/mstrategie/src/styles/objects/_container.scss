@@ -9,11 +9,13 @@
 //     $padding:         $unit;
 
 
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: t.rem(s.$unit-small);
     padding-left: t.rem(s.$unit-small);
     max-width: t.rem(s.$container-width + (s.$padding * 2));
+
 
     @media (min-width: s.$from-small) {
         padding-left: calc(#{t.rem(s.$unit-small)} + 52px);

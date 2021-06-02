@@ -6,7 +6,6 @@
 	<p>{{ qux }}</p> -->
 
 	<div class="o-container">
-		<h1 class="c-heading -h1">Hello</h1>
 	
 		{% for post in posts %}
 			{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}

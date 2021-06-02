@@ -25,11 +25,11 @@ export default class Navbar {
 
         if(this.navIsOpen) {
             this.navIsOpen = false;
-            this.nav.classList.remove('--open');
+            this.nav.classList.remove('is-open');
 
         } else {
             this.navIsOpen = true;
-            this.nav.classList.add('--open');
+            this.nav.classList.add('is-open');
         }
 
     }
