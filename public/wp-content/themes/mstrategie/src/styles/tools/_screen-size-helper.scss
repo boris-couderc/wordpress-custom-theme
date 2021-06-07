@@ -32,6 +32,10 @@ body {
       @media (min-width: s.$from-large) {
         content: '> large #{s.$from-large}';
       }
+
+      @media (min-width: s.$from-big) {
+        content: '> big #{s.$from-big}';
+      }
     
       @media (min-width: s.$from-huge) {
         content: '> huge #{s.$from-huge}';

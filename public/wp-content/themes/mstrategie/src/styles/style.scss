@@ -8,7 +8,7 @@
 // ==========================================================================
 @forward "generic/normalize";
 @forward "generic/generic";
-// @forward "generic/media";
+@forward "generic/media";
 // @forward "generic/form";
 // @forward "generic/button"; 
 
@@ -41,6 +41,7 @@
 @forward "components/header";
 @forward "components/footer";
 @forward "components/navigation";
+@forward "components/hero";
 
 // Templates
 // ==========================================================================

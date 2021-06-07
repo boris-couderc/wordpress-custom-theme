@@ -63,23 +63,15 @@
     }
 }
 
-
-h1 {
-    text-decoration: underline;
-    text-decoration-color: s.$color-primary;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 4px;
-}
-
 @media (min-width: s.$from-medium) {
     .c-heading {
         @at-root h1,
         &.-h1 {
-            font-size: t.rem(s.$font-size-h1);
+            font-size: t.rem(s.$font-size-h1-t);
             line-height: s.$line-height-h1;
 
             .home & {
-                font-size: t.rem(s.$font-size-h1);
+                font-size: t.rem(s.$font-size-h1-t);
             }
         }
     
@@ -106,6 +98,20 @@ h1 {
         @at-root h6,
         &.-h6 {
             font-size: t.rem(s.$font-size-h6);
+        }
+    }
+}
+
+
+@media (min-width: s.$from-medium) {
+    .c-heading {
+        @at-root h1,
+        &.-h1 {
+            font-size: t.rem(s.$font-size-h1);
+
+            .home & {
+                font-size: t.rem(s.$font-size-h1);
+            }
         }
     }
 }

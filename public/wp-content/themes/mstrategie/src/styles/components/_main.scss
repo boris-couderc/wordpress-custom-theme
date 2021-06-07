@@ -6,9 +6,11 @@
     margin-bottom: 6rem;
 
     .home & {
-        margin-top: 3rem;
+        margin-top: 0;
     }
+}
 
+main {
     a {
         color: s.$link-color;
     

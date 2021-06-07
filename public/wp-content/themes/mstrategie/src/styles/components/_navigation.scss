@@ -56,7 +56,6 @@
 
 }
 
-
 .menu {}
 
 .menu_items {
@@ -172,6 +171,10 @@
     .menu_items {
         display: flex;
         flex-direction: row;
+    }
+
+    .menu-item-home {
+        display: none;
     }
 
     .menu-item {

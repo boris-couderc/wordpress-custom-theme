@@ -1,3 +1,4 @@
+
 // ==========================================================================
 // Settings / Config
 // ==========================================================================
@@ -18,7 +19,8 @@ $font-sans-serif: 'inter', sans-serif;
 // =============================================================================
 // Base
 $font-size:   16px;
-$line-height: 24px / $font-size;
+// $line-height: 24px / $font-size;
+$line-height: 1.5;
 $font-family: $font-sans-serif;
 $color:       #222222;
 // Headings
@@ -29,6 +31,7 @@ $font-size-h3-m:  24px  !default;
 $font-size-h4-m:  20px  !default;
 $font-size-h5-m:  18px  !default;
 $font-size-h6-m:  16px  !default;
+$font-size-h1-t:  44px  !default;
 $font-size-h1:  48px  !default;
 $font-size-h2:  32px  !default;
 $font-size-h3:  24px  !default;
@@ -53,21 +56,26 @@ $easing: linear;
 
 // Spacing Units
 // =============================================================================
-$unit:       64px;
-$unit-small: 32px;
+// $unit:       64px;
+// $unit-small: 32px;
+$unit:       4rem;
+$unit-small: 2rem;
 
 // Container
 // ==========================================================================
-$container-width: 1040px;
+// $container-width: 1040px;
+// $container-width: 1240px;
+// $container-width: 85.5rem;
+$container-width: 70rem;
 $padding-small:   $unit-small;
-$padding-medium:  48px;
+$padding-medium:  3rem;
 $padding:         $unit;
 
 // Breakpoints
 // =============================================================================
 $from-tiny:     500px              !default;
 $to-tiny:       $from-tiny - 1     !default;
-$from-small:    700px              !default;
+$from-small:    765px              !default;
 $to-small:      $from-small - 1    !default;
 $from-medium:   990px             !default;
 $to-medium:     $from-medium - 1   !default;

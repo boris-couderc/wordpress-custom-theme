@@ -21,13 +21,13 @@
 
 // Main column width
 .wp-block {
-    max-width: t.rem(s.$container-width);
+    max-width: s.$container-width;
 	//$container-width
 }
 
 // Width of "wide" blocks
 .wp-block[data-align="wide"] {
-    max-width: t.rem(s.$container-width);
+    max-width: s.$container-width;
 }
 
 // Width of "full-wide" blocks
