@@ -1,0 +1,9 @@
+
+@use '../settings'as s;
+
+.u-title-underline {
+    text-decoration: underline;
+    text-decoration-color: s.$color-primary;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+}

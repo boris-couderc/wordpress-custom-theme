@@ -1,56 +1,97 @@
-// ==========================================================================
-// Utilities / Spacing
-// ==========================================================================
+// Margin
 
-////
-/// Utility classes to put specific spacing values onto elements. The below loop
-/// will generate us a suite of classes like:
-///
-/// @example
-///   .u-margin-top {}
-///   .u-padding-left-large {}
-///   .u-margin-right-small {}
-///   .u-padding {}
-///   .u-padding-right-none {}
-///   .u-padding-horizontal {}
-///   .u-padding-vertical-small {}
-///
-/// @link https://github.com/inuitcss/inuitcss/blob/512977a/utilities/_utilities.spacing.scss
-////
-
-/* stylelint-disable string-quotes */
-
-$spacing-directions: (
-    null:          null,
-    '-top':        '-top',
-    '-right':      '-right',
-    '-bottom':     '-bottom',
-    '-left':       '-left',
-    '-horizontal': '-left' '-right',
-    '-vertical':   '-top'  '-bottom',
-) !default;
-
-$spacing-properties: (
-    'padding': 'padding',
-    'margin':  'margin',
-) !default;
-
-$spacing-sizes: (
-    null:     $unit,
-    '-small': $unit-small,
-    '-none':  0
-) !default;
-
-@each $property-namespace, $property in $spacing-properties {
-    @each $direction-namespace, $direction-rules in $spacing-directions {
-        @each $size-namespace, $size in $spacing-sizes {
-            .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace} {
-                @each $direction in $direction-rules {
-                    #{$property}#{$direction}: $size !important;
-                }
-            }
-        }
-    }
+.u-margin-none {
+    margin: 0 !important;
+}
+.u-margin-\.25 {
+    margin: .25rem !important;
+}
+.u-margin-\.5 {
+    margin: .5rem !important;
+}
+.u-margin-1 {
+    margin: 1rem !important;
+}
+.u-margin-2 {
+    margin: 2rem !important;
+}
+.u-margin-3 {
+    margin: 3rem !important;
 }
 
-/* stylelint-enable string-quotes */
+.u-margin-top-none {
+    margin-top: 0 !important;
+}
+.u-margin-top-\.25 {
+    margin-top: .25rem !important;
+}
+.u-margin-top-\.5 {
+    margin-top: .5rem !important;
+}
+.u-margin-top-1 {
+    margin-top: 1rem !important;
+}
+.u-margin-top-2 {
+    margin-top: 2rem !important;
+}
+.u-margin-top-3 {
+    margin-top: 3rem !important;
+}
+
+.u-margin-bottom-none {
+    margin-bottom: 0 !important;
+}
+.u-margin-bottom-\.25 {
+    margin-bottom: .25rem !important;
+}
+.u-margin-bottom-\.5 {
+    margin-bottom: .5rem !important;
+}
+.u-margin-bottom-1 {
+    margin-bottom: 1rem !important;
+}
+.u-margin-bottom-2 {
+    margin-bottom: 2rem !important;
+}
+.u-margin-bottom-3 {
+    margin-bottom: 3rem !important;
+}
+
+.u-margin-left-none {
+    margin-left: 0 !important;
+}
+.u-margin-left-\.25 {
+    margin-left: .25rem !important;
+}
+.u-margin-left-\.5 {
+    margin-left: .5rem !important;
+}
+.u-margin-left-1 {
+    margin-left: 1rem !important;
+}
+.u-margin-left-2 {
+    margin-left: 2rem !important;
+}
+.u-margin-left-3 {
+    margin-left: 3rem !important;
+}
+
+
+.u-margin-right-none {
+    margin-right: 0 !important;
+}
+.u-margin-right-\.25 {
+    margin-right: .25rem !important;
+}
+.u-margin-right-\.5 {
+    margin-right: .5rem !important;
+}
+.u-margin-right-1 {
+    margin-right: 1rem !important;
+}
+.u-margin-right-2 {
+    margin-right: 2rem !important;
+}
+.u-margin-right-3 {
+    margin-right: 3rem !important;
+}

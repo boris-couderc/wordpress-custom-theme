@@ -6,13 +6,12 @@ export default class Navbar {
 
         this.navIsOpen = false;
 
-
         this.init()
 
     }
 
     init() {
-        console.log("init Navbar");
+        // console.log("init Navbar");
 
         this.toggle.addEventListener('click', this.toggleMenu.bind(this))
 
@@ -21,7 +20,7 @@ export default class Navbar {
 
     toggleMenu() {
 
-        console.log('toggleMenu')
+        // console.log('toggleMenu')
 
         if(this.navIsOpen) {
             this.navIsOpen = false;

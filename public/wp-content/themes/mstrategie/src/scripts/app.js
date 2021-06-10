@@ -15,7 +15,7 @@ function init() {
   html.classList.remove("is-loading");
   html.classList.remove("has-no-js");
 
-  console.log('app is init !');
+  // console.log('app is init !');
 
   test();
 

@@ -36,11 +36,11 @@ svg {
     // 4. If a `width` and/or `height` attribute have been explicitly defined, let’s
     //    not make the image fluid.
     //
-    &[width], /* [4] */
-    &[height] {
-        /* [4] */
-        max-width: none;
-    }
+    // &[width], /* [4] */
+    // &[height] {
+    //     /* [4] */
+    //     max-width: none;
+    // }
 }
 
 //
