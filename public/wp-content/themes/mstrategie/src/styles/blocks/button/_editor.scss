@@ -1,0 +1,13 @@
+@use '../../settings'as s;
+
+.wp-block-button__link {
+    display: inline-block;
+    font-size: 1.125em;
+    cursor: pointer;
+    font-family: "basiercircle","inter",sans-serif;
+}
+
+.is-style-outline>.wp-block-button__link:not(.has-text-color), .wp-block-button__link.is-style-outline:not(.has-text-color) {
+    color: s.$color-txt-darker;
+    border: 2px solid s.$color-primary;
+}
