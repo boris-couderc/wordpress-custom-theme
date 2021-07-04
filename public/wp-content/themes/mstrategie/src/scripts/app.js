@@ -1,5 +1,5 @@
 
-import test from "./test";
+// import test from "./test";
 
 import Navbar from "./modules/Navbar";
 
@@ -17,7 +17,7 @@ function init() {
 
   // console.log('app is init !');
 
-  test();
+  // test();
 
   const navbar = new Navbar();
 
