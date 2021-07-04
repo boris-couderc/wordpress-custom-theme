@@ -246,3 +246,16 @@
     }
 
 }
+
+@media (min-width: s.$from-large) {
+
+    .menu-item {
+        &:nth-child(n+3) {
+            margin-left: 2rem;
+        }
+
+        &:last-child {
+            margin-left: 1.75rem;
+        }
+    }
+}
