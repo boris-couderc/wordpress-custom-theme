@@ -80,7 +80,7 @@
 }
 
 
-@media (max-width: 1019px) {
+@media (max-width: 1022px) {
 
     .menu_items {
         display: flex;
@@ -164,7 +164,7 @@
 }
 
 
-@media (min-width: 1020px) {
+@media (min-width: 1023px) {
 
     .menu-mobile-toggle {
         display: none;
@@ -186,7 +186,7 @@
         // }
 
         &:nth-child(n+3) {
-            margin-left: 2rem;
+            margin-left: 1.75rem;
         }
 
         &::before {
@@ -225,7 +225,7 @@
         }
 
         &:last-child {
-            margin-left: 1.75rem;
+            margin-left: 1.5rem;
 
             a {
                 display: inline-block;
