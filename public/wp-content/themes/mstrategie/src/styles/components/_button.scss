@@ -18,6 +18,9 @@
 
 
 .c-button {
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
 
     &.-secondary {
         background-color: #ffffff;
@@ -33,6 +36,16 @@
         }
     }
 
+    &.-outline.-primary {
+        background: none;
+        border: 2px solid s.$color-primary;
+        transition: border ease-in-out 200ms;
+
+        // &:hover {
+        //     border: 2px solid rgba($color: #000000, $alpha: .3);
+        // }
+    }
+
     &.-outline.-white {
         color: #ffffff;
         border: 2px solid rgba($color: #ffffff, $alpha: .1);
@@ -43,4 +56,9 @@
         }
     }
 
+}
+
+.c-required-text {
+    padding: 1rem 0;
+    text-align: right;
 }

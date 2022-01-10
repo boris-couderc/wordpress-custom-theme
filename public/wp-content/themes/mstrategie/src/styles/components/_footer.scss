@@ -1,8 +1,6 @@
 @use '../settings'as s;
 
 .footer {
-    display: flex;
-    justify-content: flex-end;
     padding-top: 2rem;
     padding-bottom: 2rem;
     background: s.$color-darker;
@@ -12,4 +10,9 @@
         font-size: .9rem;
         text-align: right;
     }
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
 }

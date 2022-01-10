@@ -79,7 +79,7 @@ class StarterSite extends Timber\Site {
 		add_filter('show_admin_bar', '__return_false');
 
 		// Disable rest api
-		add_action( 'rest_authentication_errors', array( $this, 'rest_auth_errors' ) );
+		// add_action( 'rest_authentication_errors', array( $this, 'rest_auth_errors' ) );
 		remove_action( 'wp_head', 'rest_output_link_wp_head', 10);
 		remove_action( 'wp_head', 'wp_oembed_add_discovery_links', 10);
 		remove_action( 'template_redirect', 'rest_output_link_header', 11, 0);
@@ -165,7 +165,9 @@ class StarterSite extends Timber\Site {
 		$context['foo']   = 'bar';
 		$context['stuff'] = 'I am a value set in your functions.php file';
 		$context['notes'] = 'These values are available everytime you call Timber::context();';
-		$context['menu']  = new Timber\Menu();
+		//$context['menu']  = new Timber\Menu();
+		$context['menu'] = new Timber\Menu('Primary menu');
+		$context['menu_footer'] = new Timber\Menu('Footer menu');
 		$context['site']  = $this;
 		return $context;
 	}

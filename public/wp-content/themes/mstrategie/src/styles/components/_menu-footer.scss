@@ -1,0 +1,44 @@
+@use '../settings'as s;
+
+.menu-footer {
+  font-size: .9rem;
+}
+
+.menu-footer_items {
+  display: flex;
+}
+
+
+.menu-footer-item {
+  position: relative;
+
+  &:not(:first-child) {
+    margin-left: 1.5rem;
+  }
+
+  a {
+    color: s.$color-txt-lighter;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    height: 1px;
+    background: rgba($color: #ffffff, $alpha: 0.35);
+    transform: scaleX(0);
+    transition: transform ease-in-out 200ms;
+    transform-origin: right;
+  }
+
+  &:focus,
+  &:hover {
+    color: s.$color-primary;
+    &::before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}

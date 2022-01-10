@@ -1,0 +1,36 @@
+
+.contact-form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.wpcf7 {
+
+  form .contact-form .wpcf7-response-output {
+    order: -1;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    border: none;
+  }
+
+  form.sent .contact-form .wpcf7-response-output {
+    background: #f0fff0;
+    color: #2f9b39;
+  }
+
+  form.invalid .contact-form .wpcf7-response-output,
+  form.unaccepted .contact-form .wpcf7-response-output,
+  form.failed .contact-form .wpcf7-response-output,
+  form.aborted .contact-form .wpcf7-response-output {
+    background: #ffeeea;
+    color: #f23000;
+  }
+
+  .wpcf7-not-valid-tip {
+    padding-top: .25rem;
+    font-size: .95rem;
+  }
+
+}
