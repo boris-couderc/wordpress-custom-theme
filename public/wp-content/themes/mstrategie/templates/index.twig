@@ -2,17 +2,14 @@
 
 {% block content %}
 
-	<!-- <h2>{{ foo }}</h2>
-	<p>{{ qux }}</p> -->
-
+	<!-- <div class="content-wrapper"> -->
 	<div class="o-container">
-	
+		<h1 class="c-heading -h1">{{post.title}}</h1>
+
 		{% for post in posts %}
 			{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
 		{% endfor %}
 		
-		{% include 'components/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
-
-	</div>
+	</div><!-- /o-container -->
 
 {% endblock %}

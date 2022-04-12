@@ -1,0 +1,10 @@
+
+@use '../settings'as s;
+
+.u-text-light {
+  color: s.$color-txt-light !important;
+}
+
+.u-text-lighter {
+  color: s.$color-txt-lighter !important;
+}
