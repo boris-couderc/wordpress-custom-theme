@@ -1,8 +1,17 @@
 {% extends "tease.twig" %}
 
 {% block content %}
-	<h2 class="h2"><a href="{{post.link}}">{{post.title}}</a></h2>
 
+	{% if post.thumbnail.src %}
+		<div class="tease-post_visual">
+			<a href="{{post.link}}">
+				<img src="{{ post.thumbnail.src('medium_large') }}" alt="{{ post.title }}">
+			</a>
+		</div>
+	{% endif %}
+
+	<div class="tease-post_content">
+		<h2 class="h2"><a href="{{post.link}}">{{post.title}}</a></h2>
 		{# <p>{{ post.preview.length(25) }}</p> #}
 		{# <p>{{ post.preview.length(25).read_more('Lire l\'article') }}</p> #}
 		<p>{{ post.preview.read_more(false) }}</p>
@@ -10,9 +19,6 @@
 		{# <div class="u-text-right"> #}
 			<a href="{{post.link}}">Lire l'article</a>
 		{# </div> #}
-
-		{# {% if post.thumbnail.src %}
-			<img src="{{post.thumbnail.src}}" />
-		{% endif %} #}
+	</div>
 
 {% endblock %}
