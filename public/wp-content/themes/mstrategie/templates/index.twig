@@ -2,14 +2,11 @@
 
 {% block content %}
 
-	<!-- <div class="content-wrapper"> -->
-	<div class="o-container">
-		<h1 class="c-heading -h1">{{post.title}}</h1>
-
-		{% for post in posts %}
-			{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-		{% endfor %}
-		
-	</div><!-- /o-container -->
+<div class="o-container">
+	<h1 class="c-heading -h1">{{post.title}}</h1>
+	{% for post in posts %}
+	{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+	{% endfor %}
+</div><!-- /o-container -->
 
 {% endblock %}
