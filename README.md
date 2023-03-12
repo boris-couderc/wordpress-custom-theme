@@ -1,1 +1,3 @@
-# mstrategie
+# Wordpress custom theme
+
+

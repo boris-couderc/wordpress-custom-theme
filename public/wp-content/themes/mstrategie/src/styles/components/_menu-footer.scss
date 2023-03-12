@@ -1,13 +1,12 @@
-@use '../settings'as s;
+@use '../settings' as s;
 
 .menu-footer {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .menu-footer_items {
   display: flex;
 }
-
 
 .menu-footer-item {
   position: relative;

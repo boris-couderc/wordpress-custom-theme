@@ -1,0 +1,94 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@use '../../../../themes/mstrategie/src/styles/settings'as s;
+
+.mstrategie-blog {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.25rem;
+	padding-bottom: 2rem;
+
+	&_title {
+		margin-top: 3rem !important;
+	}
+
+	&_card {
+		border-radius: 0.25rem;
+		overflow: hidden;
+		background: s.$color-secondary-lighter;
+	}
+
+	&_card-title {
+		text-decoration: none;
+
+		h3 {
+			margin-bottom: 0.25rem !important;
+			margin-top: 0 !important;
+		}
+	}
+
+	&_card-date {
+		color: s.$color-txt-lighter;
+		font-size: 0.9em;
+	}
+
+	&_card-visuel {
+		display: block;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.06) inset;
+			z-index: 2;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			min-height: 250px;
+			max-height: 400px;
+			object-fit: cover;
+		}
+	}
+
+	&_card-content {
+		padding: 3rem 2.25rem 3.25rem 2.5rem;
+	}
+}
+
+@media (min-width: s.$from-small) {
+	.mstrategie-blog {
+		grid-template-columns: 1fr 1fr;
+		margin-left: -2.5rem;
+
+		&_title {
+			margin-top: 4rem !important;
+		}
+	}
+}
+
+@media (min-width: s.$from-medium) {
+	.mstrategie-blog {
+		grid-template-columns: 1fr 1fr 1fr;
+
+		&_title {
+			margin-top: 6rem !important;
+		}
+	}
+}
+
+@media (min-width: s.$from-large) {
+	.mstrategie-blog {
+		margin-left: 2.5rem;
+	}
+}

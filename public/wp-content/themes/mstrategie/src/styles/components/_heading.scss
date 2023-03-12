@@ -1,5 +1,5 @@
-@use '../settings'as s;
-@use '../tools'as t;
+@use '../settings' as s;
+@use '../tools' as t;
 
 @at-root h1,
   h2,
@@ -15,17 +15,13 @@
   font-weight: normal;
   color: s.$color-title;
 
-  &:first-child {
-    //margin-top: 0;
-  }
-
   &:not(.blocks-3m_title) a,
-	[style*="text-decoration"] {
-			text-decoration: underline !important;
-			text-decoration-color: s.$color-primary !important;
-			text-decoration-thickness: 2px !important;
-			text-underline-offset: 3px !important;
-	}
+  [style*='text-decoration'] {
+    text-decoration: underline !important;
+    text-decoration-color: s.$color-primary !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 3px !important;
+  }
 }
 
 .c-heading {
@@ -35,10 +31,6 @@
     line-height: s.$line-height-h1;
     margin-top: 0;
     margin-bottom: s.$margin-bottom-h1;
-
-    // body.home & {
-    //   font-size: 30px;
-    // }
 
     body:not(.home) &:not(.homepage-hero_title),
     a {
@@ -91,10 +83,6 @@
       &.-h1 {
       font-size: t.rem(s.$font-size-h1-t);
       line-height: s.$line-height-h1;
-
-      // body.home & {
-      //   font-size: t.rem(s.$font-size-h1-t);
-      // }
     }
 
     @at-root h2,
@@ -124,14 +112,14 @@
   }
 
   @at-root h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .c-heading {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .c-heading {
     &:not(.blocks-3m_title) a,
-    [style*="text-decoration"] {
+    [style*='text-decoration'] {
       text-decoration-thickness: 3px !important;
       text-underline-offset: 4px !important;
     }
@@ -143,10 +131,6 @@
     @at-root h1,
       &.-h1 {
       font-size: t.rem(s.$font-size-h1);
-
-      // body.home & {
-      //   font-size: t.rem(s.$font-size-h1);
-      // }
     }
   }
 }

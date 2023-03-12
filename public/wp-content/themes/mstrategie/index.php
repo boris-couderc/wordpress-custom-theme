@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  * This is the most generic template file in a WordPress theme
@@ -27,4 +28,4 @@ if ( is_home() ) {
 }
 */
 // Timber::render( $templates, $context );
-Timber::render( 'index.twig', $context );
+Timber::render('index.twig', $context);

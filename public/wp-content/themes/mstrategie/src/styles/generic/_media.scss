@@ -13,15 +13,15 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle; /* [1] */
+  vertical-align: middle; /* [1] */
 }
 
 //
 // Add the correct display in iOS 4-7.
 //
 audio:not([controls]) {
-    display: none;
-    height: 0;
+  display: none;
+  height: 0;
 }
 
 //
@@ -29,30 +29,30 @@ audio:not([controls]) {
 //
 img,
 svg {
-    max-width: 100%; /* [2] */
-    height: auto;
+  max-width: 100%; /* [2] */
+  height: auto;
 
-    //
-    // 4. If a `width` and/or `height` attribute have been explicitly defined, let’s
-    //    not make the image fluid.
-    //
-    // &[width], /* [4] */
-    // &[height] {
-    //     /* [4] */
-    //     max-width: none;
-    // }
+  //
+  // 4. If a `width` and/or `height` attribute have been explicitly defined, let’s
+  //    not make the image fluid.
+  //
+  // &[width], /* [4] */
+  // &[height] {
+  //     /* [4] */
+  //     max-width: none;
+  // }
 }
 
 //
 // 4. Offset `alt` text from surrounding copy.
 //
 img {
-    font-style: italic; /* [4] */
+  font-style: italic; /* [4] */
 }
 
 //
 // 5. SVG elements should fallback to their surrounding text color.
 //
 svg {
-    fill: currentColor; /* [5] */
+  fill: currentColor; /* [5] */
 }

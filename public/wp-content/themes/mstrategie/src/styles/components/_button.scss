@@ -1,64 +1,57 @@
-@use '../settings'as s;
-@use '../tools'as t;
-
+@use '../settings' as s;
+@use '../tools' as t;
 
 .c-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 2.5rem;
-    font-size: 1.125rem;
-    background-color: lightgray;
-    font-family: s.$font-family-heading;
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 2.5rem;
+  font-size: 1.125rem;
+  background-color: lightgray;
+  font-family: s.$font-family-heading;
 
-    @include t.u-hocus {
-        background-color: darkgray;
-    }
+  @include t.u-hocus {
+    background-color: darkgray;
+  }
 }
 
-
 .c-button {
-    display: inline-block;
-    width: auto;
-    cursor: pointer;
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
 
-    &.-secondary {
-        background-color: #ffffff;
+  &.-secondary {
+    background-color: #ffffff;
+  }
+
+  &.-outline {
+    background: none;
+    border: 2px solid rgba($color: #000000, $alpha: 0.1);
+    transition: border ease-in-out 200ms;
+
+    &:hover {
+      border: 2px solid rgba($color: #000000, $alpha: 0.3);
     }
+  }
 
-    &.-outline {
-        background: none;
-        border: 2px solid rgba($color: #000000, $alpha: .1);
-        transition: border ease-in-out 200ms;
+  &.-outline.-primary {
+    background: none;
+    border: 2px solid s.$color-primary;
+    transition: border ease-in-out 200ms;
+  }
 
-        &:hover {
-            border: 2px solid rgba($color: #000000, $alpha: .3);
-        }
+  &.-outline.-white {
+    color: #ffffff;
+    border: 2px solid rgba($color: #ffffff, $alpha: 0.1);
+    transition: border ease-in-out 200ms;
+
+    &:hover {
+      border: 2px solid rgba($color: #ffffff, $alpha: 0.3);
     }
-
-    &.-outline.-primary {
-        background: none;
-        border: 2px solid s.$color-primary;
-        transition: border ease-in-out 200ms;
-
-        // &:hover {
-        //     border: 2px solid rgba($color: #000000, $alpha: .3);
-        // }
-    }
-
-    &.-outline.-white {
-        color: #ffffff;
-        border: 2px solid rgba($color: #ffffff, $alpha: .1);
-        transition: border ease-in-out 200ms;
-
-        &:hover {
-            border: 2px solid rgba($color: #ffffff, $alpha: .3);
-        }
-    }
-
+  }
 }
 
 .c-required-text {
-    padding: 1rem 0;
-    text-align: right;
+  padding: 1rem 0;
+  text-align: right;
 }

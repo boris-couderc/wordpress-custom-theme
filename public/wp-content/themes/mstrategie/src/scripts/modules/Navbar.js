@@ -1,35 +1,22 @@
 export default class Navbar {
-    constructor() {
+  constructor() {
+    this.nav = document.querySelector('.js-menu')
+    this.toggle = document.querySelector('.js-menu-mobile-toggle')
+    this.navIsOpen = false
+    this.init()
+  }
 
-        this.nav = document.querySelector('.js-menu');
-        this.toggle = document.querySelector('.js-menu-mobile-toggle');
+  init() {
+    this.toggle.addEventListener('click', this.toggleMenu.bind(this))
+  }
 
-        this.navIsOpen = false;
-
-        this.init()
-
+  toggleMenu() {
+    if (this.navIsOpen) {
+      this.navIsOpen = false
+      this.nav.classList.remove('is-open')
+    } else {
+      this.navIsOpen = true
+      this.nav.classList.add('is-open')
     }
-
-    init() {
-        // console.log("init Navbar");
-
-        this.toggle.addEventListener('click', this.toggleMenu.bind(this))
-
-
-    }
-
-    toggleMenu() {
-
-        // console.log('toggleMenu')
-
-        if(this.navIsOpen) {
-            this.navIsOpen = false;
-            this.nav.classList.remove('is-open');
-
-        } else {
-            this.navIsOpen = true;
-            this.nav.classList.add('is-open');
-        }
-
-    }
+  }
 }

@@ -1,59 +1,41 @@
-@use '../settings'as s;
-@use '../tools'as t;
+@use '../settings' as s;
+@use '../tools' as t;
 
 .o-container {
-    // border: 1px solid rgba($color: #000000, $alpha: .05);
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: s.$unit-small;
+  padding-left: s.$unit-small;
+  max-width: s.$container-width + s.$padding * 2;
 
-//     $padding-small:   $unit-small;
-//     $padding-medium:  48px;
-//     $padding:         $unit;
-
-
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: s.$unit-small;
-    padding-left: s.$unit-small;
-    max-width: s.$container-width + s.$padding * 2;
-
-
-    @media (min-width: s.$from-small) {
-        padding-left: calc(#{s.$unit-small} + 52px);
-        &.-pl-same {
-            padding-left: s.$unit-small;
-        }
+  @media (min-width: s.$from-small) {
+    padding-left: calc(#{s.$unit-small} + 52px);
+    &.-pl-same {
+      padding-left: s.$unit-small;
     }
+  }
 
-    @media (min-width: s.$from-medium) {
-        padding-left: calc(#{s.$padding-medium} + 58px);
-        &.-pl-same {
-            padding-left:s.$padding-medium;
-        }
+  @media (min-width: s.$from-medium) {
+    padding-left: calc(#{s.$padding-medium} + 58px);
+    &.-pl-same {
+      padding-left: s.$padding-medium;
     }
+  }
 
-    @media (min-width: 1024px) {
-        padding-right:s.$padding-medium;
-    }
+  @media (min-width: 1024px) {
+    padding-right: s.$padding-medium;
+  }
 
-    @media (min-width: s.$from-large) {
-        padding-right: s.$padding;
-        padding-left: calc(#{s.$padding} + 68px);
-        &.-pl-same {
-            padding-left: s.$padding;
-        }
+  @media (min-width: s.$from-large) {
+    padding-right: s.$padding;
+    padding-left: calc(#{s.$padding} + 68px);
+    &.-pl-same {
+      padding-left: s.$padding;
     }
+  }
 
-    @media (min-width: s.$from-huge) {
-        padding-left: calc(#{s.$padding} + 73px);
-    }
+  @media (min-width: s.$from-huge) {
+    padding-left: calc(#{s.$padding} + 73px);
+  }
 }
-
-/*
-.container {
-    border: 2px solid red;
-}
-
-.content-wrapper {
-    border: 2px solid green;
-}
-*/

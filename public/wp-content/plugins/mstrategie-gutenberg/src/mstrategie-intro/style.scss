@@ -1,0 +1,16 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@use '../../../../themes/mstrategie/src/styles/settings'as s;
+
+.wp-block-mstrategie-mstrategie-intro {
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 1.675;
+	color: s.$color-title;
+	margin-bottom: 2rem;
+}

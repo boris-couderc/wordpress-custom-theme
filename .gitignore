@@ -12,7 +12,9 @@ composer.lock
 public/wp-admin/
 public/wp-content/*
 !public/wp-content/themes/
+!public/wp-content/plugins/
 public/wp-content/themes/*
+public/wp-content/plugins/*
 public/wp-includes/
 
 public/.htaccess
@@ -29,6 +31,7 @@ node_modules
 
 # Don’t ignore current theme
 !public/wp-content/themes/mstrategie
+!public/wp-content/plugins/mstrategie-gutenberg
 !public/wp-config.php
 
 

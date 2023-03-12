@@ -1,43 +1,31 @@
-/*
-@use '../settings'as s;
-@use '../tools'as t;
-*/
-
 // Generic
 // ==========================================================================
-@forward "generic/normalize";
-@forward "generic/generic";
-@forward "generic/media";
-
+@forward 'generic/normalize';
+@forward 'generic/generic';
+@forward 'generic/media';
 
 // Elements
 // ==========================================================================
-@forward "elements/fonts";
-@forward "elements/page";
-
+@forward 'elements/fonts';
+@forward 'elements/page';
 
 // Objects
 // ==========================================================================
-@forward "objects/container";
-@forward "objects/page";
-
+@forward 'objects/container';
+@forward 'objects/page';
 
 // Components
 // ==========================================================================
-@forward "components/heading";
-@forward "components/button";
-@forward "components/header";
-@forward "components/footer";
-// @forward "components/intro";
-
-// Templates
-// ==========================================================================
+@forward 'components/heading';
+@forward 'components/button';
+@forward 'components/header';
+@forward 'components/footer';
 
 // Blocks
 // ==========================================================================
-@forward "blocks/blocks-editor";
+@forward 'blocks/blocks-editor';
 
 // Utilities
 // ==========================================================================
-@forward "utilities/helpers";
-@forward "utilities/spacing";
+@forward 'utilities/helpers';
+@forward 'utilities/spacing';

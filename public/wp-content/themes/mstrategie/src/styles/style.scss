@@ -1,65 +1,40 @@
-/*
-@use '../settings'as s;
-@use '../tools'as t;
-*/
-
 // Generic
 // ==========================================================================
-@forward "generic/normalize";
-@forward "generic/generic";
-@forward "generic/media";
-@forward "generic/form";
-// @forward "generic/button"; 
+@forward 'generic/normalize';
+@forward 'generic/generic';
+@forward 'generic/media';
+@forward 'generic/form';
 
 // Elements
 // ==========================================================================
-@forward "elements/fonts";
-@forward "elements/page";
+@forward 'elements/fonts';
+@forward 'elements/page';
 
 // Objects
 // ==========================================================================
-// @forward "objects/scroll";
-@forward "objects/container";
-@forward "objects/page";
-// @forward "objects/ratio";
-// @forward "objects/layout";
-// @forward "objects/crop";
-// @forward "objects/table";
-
-// Vendors
-// ==========================================================================
-// @forward "vendors/vendor";
+@forward 'objects/container';
+@forward 'objects/page';
 
 // Components
 // ==========================================================================
-// @forward "components/scrollbar";
-@forward "components/heading";
-@forward "components/button";
-@forward "components/form";
-@forward "components/main";
-@forward "components/header";
-@forward "components/footer";
-@forward "components/navigation";
-@forward "components/menu-footer";
-@forward "components/contact-form";
-@forward "components/blog";
-
-// Templates
-// ==========================================================================
-// @forward "templates/template";
+@forward 'components/heading';
+@forward 'components/button';
+@forward 'components/form';
+@forward 'components/main';
+@forward 'components/header';
+@forward 'components/footer';
+@forward 'components/navigation';
+@forward 'components/menu-footer';
+@forward 'components/contact-form';
+@forward 'components/blog';
 
 // Blocks
 // ==========================================================================
-@forward "blocks/blocks";
+@forward 'blocks/blocks';
 
 // Utilities
 // ==========================================================================
-// @forward "utilities/ratio";
-// @forward "utilities/widths";
-@forward "utilities/align";
-@forward "utilities/colors";
-@forward "utilities/helpers";
-// @forward "utilities/states";
-@forward "utilities/spacing";
-// @forward "utilities/print";
-// @forward "utilities/decoration";
+@forward 'utilities/align';
+@forward 'utilities/colors';
+@forward 'utilities/helpers';
+@forward 'utilities/spacing';

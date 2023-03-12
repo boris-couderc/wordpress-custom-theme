@@ -1,53 +1,51 @@
-@use '../settings'as s;
-@use '../tools'as t;
+@use '../settings' as s;
+@use '../tools' as t;
 
 .header {
-    // border: 1px solid rgba($color: #000000, $alpha: .2);
+  font-family: s.$font-family-heading;
+  padding-top: t.rem(24px);
+  padding-bottom: t.rem(24px);
 
-    font-family: s.$font-family-heading;
-    padding-top: t.rem(24px);
-    padding-bottom: t.rem(24px);
+  &_content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
 
-    &_content {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 1rem;
-        align-items: center;
-    }
+  @media (min-width: s.$from-small) {
+    padding-top: t.rem(32px);
+    padding-bottom: t.rem(32px);
+  }
 
-    @media (min-width: s.$from-small) {
-        padding-top: t.rem(32px);
-        padding-bottom: t.rem(32px);
-    }
-
-    @media (min-width: s.$from-medium) {
-        padding-top: t.rem(48px);
-        padding-bottom: t.rem(48px);
-    }
+  @media (min-width: s.$from-medium) {
+    padding-top: t.rem(48px);
+    padding-bottom: t.rem(48px);
+  }
 }
 
 .logo {
-    width: 190px;
-    max-width: 100%;
-    height: auto;
+  width: 190px;
+  max-width: 100%;
+  height: auto;
 
-    &_img {
-        display: block;
-    }
+  &_img {
+    display: block;
+  }
 
-    @media (min-width: s.$from-medium) {
-        width: 210px;
-    }
+  @media (min-width: s.$from-medium) {
+    width: 210px;
+  }
 
-    @media (min-width: 1070px) {
-        width: 230px;
-    }
+  @media (min-width: 1070px) {
+    width: 230px;
+  }
 
-    @media (min-width: s.$from-large) {
-        width: 260px;
-    }
+  @media (min-width: s.$from-large) {
+    width: 260px;
+  }
 
-    @media (min-width: s.$from-huge) {
-        width: 270px;
-    }
+  @media (min-width: s.$from-huge) {
+    width: 270px;
+  }
 }

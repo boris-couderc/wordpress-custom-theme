@@ -1,27 +1,26 @@
-@use '../settings'as s;
-@use '../tools'as t;
+@use '../settings' as s;
+@use '../tools' as t;
 
 .c-main {
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 
-    .home & {
-        margin-top: 0;
-    }
+  .home & {
+    margin-top: 0;
+  }
 }
 
 main {
-    a {
-        color: s.$link-color;
-    
-        text-decoration: underline;
-        text-decoration-color: s.$color-txt-lightest;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 2px;
-        font-weight: 500;
-        
-        @include t.u-hocus {
-            color: s.$link-hover-color;
-        }
+  a {
+    color: s.$link-color;
+    text-decoration: underline;
+    text-decoration-color: s.$color-txt-lightest;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    font-weight: 500;
+
+    @include t.u-hocus {
+      color: s.$link-hover-color;
     }
+  }
 }
